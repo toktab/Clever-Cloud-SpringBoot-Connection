@@ -1,0 +1,18 @@
+Instructions:
+First we gotta create clevercloud/maven.json inside our project root and add following:
+
+{
+  "deploy": {
+    "goal": "yourgoal"
+  }
+}
+
+Second we gotta git push the project
+Third we gotta create an application on clevercloud and
+IMPORANT-> Inside environment table we shall add this changes:
+
+CC_JAVA_VERSION="17"
+LIBXML_VERSION="2.11.7"
+LIBXSLT_VERSION="1.1.39"
+MAVEN_DEPLOY_GOAL="spring-boot:run"
+
